@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My info</title>
+        <style>
+            table, th, td{
+                border:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Relation : Me</h1>
+        <h2>Name : {{name}}</h2>
+        <h2>Age : {{age}}</h2>
+
+        <!--Write the correct link for image source in place of #. The images are present in the 
+            static folder. If you dont like those images you can use your own as well-->
+        <img src = "{{url_for('static',filename="me.jpg")}}" alt = "Reference your image present in the static folder" width = "200"/>
+        <table style={border:1px solid black}r>
+                <th>foods</th>
+            </tr>
+            <tr>
+                <td>Pizza</td>
+            </tr>
+            <tr>
+                <td>burger</td>
+            </tr>
+            <tr>
+                <td>pasta</td>
+            </tr>
+        </table>
+    </body>
+</html>
